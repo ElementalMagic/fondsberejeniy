@@ -201,24 +201,24 @@
               <div class="input-range input-range-mb">
                 <div class="input-range__header">
                   <div class="input-range__name">Сумма инвестиций</div>
-                  <div class="input-range__price">10 000 000 ₽</div>
+                  <div class="input-range__price" id="sliderLabel">1 500 000 ₽</div>
                 </div>
                 <div class="input-range__slider">
-                <input type="range" min="0" max="100">
+                <input type="range" min="0" max="100" step="1" value="50" id="slider">
                 </div>
                 <div class="input-range__footer">
                   <div class="input-range__footer-price">100 000 ₽</div>
-                  <div class="input-range__footer-price">100 000 ₽</div>
-                  <div class="input-range__footer-price">100 000 ₽</div>
+                  <div class="input-range__footer-price">1 000 000 ₽</div>
+                  <div class="input-range__footer-price">10 000 000 ₽</div>
                 </div>
               </div>
               <div class="input-range">
                 <div class="input-range__header">
                   <div class="input-range__name">Срок инвестиций</div>
-                  <div class="input-range__price">3 года</div>
+                  <div class="input-range__price" id="periodLabel">1 год</div>
                 </div>
                 <div class="input-range__slider">
-                <input type="range" min="0" max="100">
+                <input type="range" min="3" max="36" id="period" value="12">
                 </div>
                 <div class="input-range__footer">
                   <div class="input-range__footer-price">1 год</div>
@@ -236,7 +236,7 @@
                 <div class="calc__text">Доходность инвестиций</div>
               </div>
               <div class="calc__item">
-                <div class="calc__big">13 123 000 ₽</div>
+                <div class="calc__big" id="res">13 123 000 ₽</div>
                 <div class="calc__text">Ваш потенциальный доход</div>
               </div>
               <button class="calc__btn blue-btn">Стать инвестром</button>
@@ -446,5 +446,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
