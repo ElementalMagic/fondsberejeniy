@@ -28,6 +28,11 @@ img {
   padding: 0 15px;
 }
 
+.section {
+  padding-bottom: 75px !important;
+  padding-top: 75px !important;
+}
+
 .blue-btn {
   background: #377ef9;
   display: flex;
@@ -40,12 +45,19 @@ img {
   text-transform: uppercase;
 }
 
-.title-block {
+h2.section-title {
   font-weight: bold;
   font-size: 44px;
   line-height: 60px;
   letter-spacing: -1px;
   color: #162d5a;
+  margin-bottom: 100px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #687792;
 }
 
 .header-main {
@@ -149,9 +161,8 @@ img {
 
 .begin-info {
   position: absolute;
-  bottom: -68px;
+  bottom: -145px;
   background: #f9fafb;
-  max-width: 1100px;
   height: 140px;
   width: 100%;
   display: flex;
@@ -172,8 +183,8 @@ img {
 }
 
 .about {
-  padding-top: 185px;
-  margin-bottom: 150px;
+  padding-top: 180px !important;
+  margin-bottom: 50px;
 }
 
 .about__title {
@@ -201,6 +212,7 @@ img {
 .revenue__wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .revenue__title {
@@ -216,7 +228,7 @@ img {
   font-size: 24px;
   line-height: 33px;
   color: #162d5a;
-  width: 50%;
+  width: 100%;
 }
 
 .revenue__item img {
@@ -455,6 +467,11 @@ img {
   justify-content: space-between;
 }
 
+.calc__right {
+  width: 100%;
+  max-width: 352px;
+}
+
 .calc__big {
   font-size: 44px;
   line-height: 60px;
@@ -475,6 +492,7 @@ img {
 .calc__text {
   font-size: 14px;
   color: #162d5a;
+  line-height: 19px;
 }
 
 .calc {
@@ -485,13 +503,13 @@ img {
 
 .become__title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .become__graph {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 80px;
 }
 
 .become__graph-mob {
@@ -508,7 +526,7 @@ img {
   font-size: 24px;
   line-height: 33px;
   color: #162d5a;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .become__text {
@@ -580,7 +598,7 @@ img {
 
 .guarantee__row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -595,7 +613,6 @@ img {
   font-size: 24px;
   line-height: 33px;
   color: #162d5a;
-  width: 196px;
   margin-bottom: 15px;
 }
 
@@ -603,8 +620,6 @@ img {
   font-size: 16px;
   line-height: 26px;
   color: #687792;
-  max-width: 282px;
-  min-height: 78px;
 }
 
 .ready {

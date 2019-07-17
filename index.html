@@ -1,452 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header-main">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- <link rel="stylesheet" href="css/flexboxgrid.min.css" /> -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header-main">
+    <div class="container">
+      <div class="header">
+        <img src="./img/logo.svg" class="header__logo" />
+        <div class="header__nav">
+          <div class="header__item">О компании</div>
+          <div class="header__item">Программы</div>
+          <div class="header__item">Надежность</div>
+          <div class="header__item">Преимущества</div>
+          <div class="header__item">Контакты</div>
+        </div>
+        <div class="header__right">
+          <div class="header__phone">+8 800 555 55 55</div>
+          <div class="header__phoneText">заказать звонок</div>
+        </div>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section begin-bg">
       <div class="container">
-        <div class="header">
-          <img src="./img/logo.svg" class="header__logo" />
-          <div class="header__nav">
-            <div class="header__item">О компании</div>
-            <div class="header__item">Программы</div>
-            <div class="header__item">Надежность</div>
-            <div class="header__item">Преимущества</div>
-            <div class="header__item">Контакты</div>
+        <div class="begin">
+          <div class="begin__left">
+            <div class="begin__title">
+              Надёжные инвестиции с высокой доходностью
+            </div>
+            <div class="begin__text">
+              Доходность 18% годовых при инвестициях от 100 000 руб. Вложения
+              надежно застрахованы.
+            </div>
+            <button class="begin__btn blue-btn">Стать инвестором</button>
           </div>
-          <div class="header__right">
-            <div class="header__phone">+8 800 555 55 55</div>
-            <div class="header__phoneText">заказать звонок</div>
+          <div class="begin__right">
+            <img src="./img/man.png" class="begin__img" />
           </div>
-          <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
+          <div class="begin-info">
+            <div class="begin-info__item">
+              <div class="begin-info__title">Инвестировать может каждый</div>
+              <div class="begin-info__text">от 100 тыс. руб.</div>
+            </div>
+            <div class="begin-info__item">
+              <div class="begin-info__title">Высокая доходность</div>
+              <div class="begin-info__text">от 18% годовых</div>
+            </div>
+            <div class="begin-info__item">
+              <div class="begin-info__title">Страхование инвестиций</div>
+              <div class="begin-info__text">100%</div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="begin-bg">
-        <div class="container">
-          <div class="begin">
-            <div class="begin__left">
-              <div class="begin__title">
-                Надёжные инвестиции с высокой доходностью
-              </div>
-              <div class="begin__text">
-                Доходность 18% годовых при инвестициях от 100 000 руб. Вложения
-                надежно застрахованы.
-              </div>
-              <button class="begin__btn blue-btn">Стать инвестором</button>
-            </div>
-            <div class="begin__right">
-              <img src="./img/man.png" class="begin__img" />
-            </div>
-            <div class="begin-info">
-              <div class="begin-info__item">
-                <div class="begin-info__title">Инвестировать может каждый</div>
-                <div class="begin-info__text">от 100 тыс. руб.</div>
-              </div>
-              <div class="begin-info__item">
-                <div class="begin-info__title">Высокая доходность</div>
-                <div class="begin-info__text">от 18% годовых</div>
-              </div>
-              <div class="begin-info__item">
-                <div class="begin-info__title">Страхование инвестиций</div>
-                <div class="begin-info__text">100%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about container">
-        <div class="about__title title-block">
-          О компании
-        </div>
-        <div class="about__row row">
-          <div class="col-xs-6 about__item">
-            <div class="about__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    </section>
+    <section class="section about">
+      <div class="container">
+        <h2 class="section-title">О компании</h2>
+        <div class="columns is-multiline is-variable is-8">
+          <div class="column is-half">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <button class="about__btn blue-btn">Свяжитесь с нами</button>
           </div>
-          <div class="col-xs-6 about__item">
+          <div class="column is-half">
             <img src="img/about-img.jpg" class="about__img" />
           </div>
         </div>
-      </section>
-      <section class="revenue container">
-        <div class="revenue__title title-block">Как мы обеспечиваем доход?</div>
-        <div class="revenue__wrap">
-          <div class="revenue__item">
-            <img src="./img/revenue1.svg" />
-            <div>Девелоперские проекты</div>
-          </div>
-          <div class="revenue__item">
-            <img src="./img/revenue2.svg" />
-            <div>
-              Торговля <br />
-              на фондовом рынке
+      </div>
+    </section>
+    <section class="section revenue">
+      <div class="container">
+        <h2 class="section-title has-text-centered">Как мы обеспечиваем доход?</h2>
+        <div class="columns is-multiline is-variable is-8">
+          <div class="column is-half">
+            <div class="revenue__item">
+              <img src="./img/revenue1.svg" />
+              <div>Девелоперские проекты</div>
             </div>
           </div>
-          <div class="revenue__item">
-            <img src="./img/revenue3.svg" />
-            <div>Выдача займов под залог <br />недвижимости</div>
+          <div class="column is-half">
+            <div class="revenue__item">
+              <img src="./img/revenue2.svg" />
+              <div>
+                Торговля на фондовом рынке
+              </div>
+            </div>
           </div>
-          <div class="revenue__item">
-            <img src="./img/revenue4.svg" />
-            <div>
-              Инвестиции в бизнес<br />
-              проекты
+          <div class="column is-half">
+            <div class="revenue__item">
+              <img src="./img/revenue3.svg" />
+              <div>Выдача займов под залог недвижимости</div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="revenue__item">
+              <img src="./img/revenue4.svg" />
+              <div>
+                Инвестиции в бизнес проекты
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="programm">
-        <div class="container">
-          <div class="programm__title title-block">Программы доходности</div>
-          <div class="programm__invest">Сумма инвестиций</div>
-          <div class="programm__price">
-            <div class="programm__price-title">
-              <div class="programm__price-square"></div>
-              <div class="programm__price-text">100 000 - 999 000 ₽</div>
-            </div>
-            <div class="programm__price-title">
-              <div
-                class="programm__price-square programm__price-square--blue"
-              ></div>
-              <div class="programm__price-text">1 000 000 + ₽</div>
-            </div>
+      </div>
+
+    </section>
+    <section class="section programm">
+      <div class="container">
+        <h2 class="section-title has-text-centered">Программы доходности</h2>
+        <div class="programm__invest">Сумма инвестиций</div>
+        <div class="programm__price">
+          <div class="programm__price-title">
+            <div class="programm__price-square"></div>
+            <div class="programm__price-text">100 000 - 999 000 ₽</div>
           </div>
-          <div class="programm__item-wrap">
-            <div class="programm__item">
-              <div class="programm__item-chart-wrap">
-                <div>
-                  <div class="programm__item-numeral-sm">10%</div>
-                  <div class="programm__item-chart-grey"></div>
-                </div>
-                <div>
-                  <div class="programm__item-numeral-md">35%</div>
-                  <div class="programm__item-chart-blue"></div>
-                </div>
-              </div>
-              <div class="programm__item-name">Программа доходности</div>
-              <div class="programm__item-bold">на 1 год</div>
-            </div>
-            <div class="programm__item">
-              <div class="programm__item-chart-wrap">
-                <div>
-                  <div class="programm__item-numeral-sm">10%</div>
-                  <div
-                    class="programm__item-chart-grey programm__item-chart-grey-md"
-                  ></div>
-                </div>
-                <div>
-                  <div class="programm__item-numeral-md">35%</div>
-                  <div
-                    class="programm__item-chart-blue programm__item-chart-blue-md"
-                  ></div>
-                </div>
-              </div>
-              <div class="programm__item-name">Программа доходности</div>
-              <div class="programm__item-bold">на 2 года</div>
-            </div>
-            <div class="programm__item">
-              <div class="programm__item-chart-wrap">
-                <div>
-                  <div class="programm__item-numeral-sm">10%</div>
-                  <div
-                    class="programm__item-chart-grey programm__item-chart-grey-xl"
-                  ></div>
-                </div>
-                <div>
-                  <div class="programm__item-numeral-md">45%</div>
-                  <div
-                    class="programm__item-chart-blue programm__item-chart-blue-xl"
-                  ></div>
-                </div>
-              </div>
-              <div class="programm__item-name">Программа доходности</div>
-              <div class="programm__item-bold">на 3 года</div>
-            </div>
+          <div class="programm__price-title">
+            <div class="programm__price-square programm__price-square--blue"></div>
+            <div class="programm__price-text">1 000 000 + ₽</div>
           </div>
         </div>
-      </section>
-      <section class="calc">
-        <div class="container">
-          <div class="calc__title title-block">
-            Калькулятор доходности инвестиций
+        <div class="programm__item-wrap">
+          <div class="programm__item">
+            <div class="programm__item-chart-wrap">
+              <div>
+                <div class="programm__item-numeral-sm">10%</div>
+                <div class="programm__item-chart-grey"></div>
+              </div>
+              <div>
+                <div class="programm__item-numeral-md">35%</div>
+                <div class="programm__item-chart-blue"></div>
+              </div>
+            </div>
+            <div class="programm__item-name">Программа доходности</div>
+            <div class="programm__item-bold">на 1 год</div>
           </div>
-          <div class="calc__wrap">
-            <div class="calc__left">
-              <div class="input-range input-range-mb">
-                <div class="input-range__header">
-                  <div class="input-range__name">Сумма инвестиций</div>
-                  <div class="input-range__price" id="sliderLabel">1 500 000 ₽</div>
-                </div>
-                <div class="input-range__slider">
+          <div class="programm__item">
+            <div class="programm__item-chart-wrap">
+              <div>
+                <div class="programm__item-numeral-sm">10%</div>
+                <div class="programm__item-chart-grey programm__item-chart-grey-md"></div>
+              </div>
+              <div>
+                <div class="programm__item-numeral-md">35%</div>
+                <div class="programm__item-chart-blue programm__item-chart-blue-md"></div>
+              </div>
+            </div>
+            <div class="programm__item-name">Программа доходности</div>
+            <div class="programm__item-bold">на 2 года</div>
+          </div>
+          <div class="programm__item">
+            <div class="programm__item-chart-wrap">
+              <div>
+                <div class="programm__item-numeral-sm">10%</div>
+                <div class="programm__item-chart-grey programm__item-chart-grey-xl"></div>
+              </div>
+              <div>
+                <div class="programm__item-numeral-md">45%</div>
+                <div class="programm__item-chart-blue programm__item-chart-blue-xl"></div>
+              </div>
+            </div>
+            <div class="programm__item-name">Программа доходности</div>
+            <div class="programm__item-bold">на 3 года</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section calc">
+      <div class="container">
+        <h2 class="section-title">
+          Калькулятор доходности инвестиций
+        </h2>
+        <div class="calc__wrap">
+          <div class="calc__left">
+            <div class="input-range input-range-mb">
+              <div class="input-range__header">
+                <div class="input-range__name">Сумма инвестиций</div>
+                <div class="input-range__price" id="sliderLabel">1 500 000 ₽</div>
+              </div>
+              <div class="input-range__slider">
                 <input type="range" min="0" max="100" step="1" value="50" id="slider">
-                </div>
-                <div class="input-range__footer">
-                  <div class="input-range__footer-price">100 000 ₽</div>
-                  <div class="input-range__footer-price">1 000 000 ₽</div>
-                  <div class="input-range__footer-price">10 000 000 ₽</div>
-                </div>
               </div>
-              <div class="input-range">
-                <div class="input-range__header">
-                  <div class="input-range__name">Срок инвестиций</div>
-                  <div class="input-range__price" id="periodLabel">1 год</div>
-                </div>
-                <div class="input-range__slider">
+              <div class="input-range__footer">
+                <div class="input-range__footer-price">100 000 ₽</div>
+                <div class="input-range__footer-price">1 000 000 ₽</div>
+                <div class="input-range__footer-price">10 000 000 ₽</div>
+              </div>
+            </div>
+            <div class="input-range">
+              <div class="input-range__header">
+                <div class="input-range__name">Срок инвестиций</div>
+                <div class="input-range__price" id="periodLabel">1 год</div>
+              </div>
+              <div class="input-range__slider">
                 <input type="range" min="3" max="36" id="period" value="12">
-                </div>
-                <div class="input-range__footer">
-                  <div class="input-range__footer-price">1 год</div>
-                  <div class="input-range__footer-price">2 год</div>
-                  <div class="input-range__footer-price">3 год</div>
-                </div>
               </div>
-              <div class="calc__desc">
-                Предварительный расчет. Не является публичной афертой.
+              <div class="input-range__footer">
+                <div class="input-range__footer-price">1 год</div>
+                <div class="input-range__footer-price">2 год</div>
+                <div class="input-range__footer-price">3 год</div>
               </div>
             </div>
-            <div class="calc__right">
-              <div class="calc__item">
-                <div class="calc__big">18%</div>
-                <div class="calc__text">Доходность инвестиций</div>
-              </div>
-              <div class="calc__item">
-                <div class="calc__big" id="res">13 123 000 ₽</div>
-                <div class="calc__text">Ваш потенциальный доход</div>
-              </div>
-              <button class="calc__btn blue-btn">Стать инвестром</button>
+            <div class="calc__desc">
+              Предварительный расчет. Не является публичной афертой.
             </div>
+          </div>
+          <div class="calc__right">
+            <div class="calc__item">
+              <div class="calc__big">18%</div>
+              <div class="calc__text">Доходность инвестиций</div>
+            </div>
+            <div class="calc__item">
+              <div class="calc__big" id="res">13 123 000 ₽</div>
+              <div class="calc__text">Ваш потенциальный доход</div>
+            </div>
+            <button class="calc__btn blue-btn">Стать инвестром</button>
           </div>
         </div>
-      </section>
-      <section class="become">
-        <div class="container">
-          <div class="become__title title-block">Стать инвестором просто</div>
-          <div class="become__graph">
-            <div class="become__graph-column">
-              <img src="img/money-bag.svg" class="become__img" />
-              <div class="become__item">
-                <div class="become__name">
-                  Обратитесь в наш офис <br />
-                  и заключите договор
-                </div>
-                <div class="become__text">
-                  Адрес нашего офиса можно найти <a href="#">здесь</a>
-                </div>
+      </div>
+    </section>
+    <section class="section become">
+      <div class="container">
+        <h2 class="section-title has-text-centered">Стать инвестором просто</h2>
+        <div class="become__graph">
+          <div class="become__graph-column">
+            <img src="img/money-bag.svg" class="become__img" />
+            <div class="become__item">
+              <div class="become__name">
+                Обратитесь в наш офис <br />
+                и заключите договор
               </div>
-              <img src="img/return.svg" class="become__img" />
-            </div>
-            <div class="become__midlde">
-              <div class="become__numeral">01</div>
-              <div class="become__line"></div>
-              <div class="become__numeral">02</div>
-              <div class="become__line"></div>
-              <div class="become__numeral">03</div>
-            </div>
-            <div class="become__graph-column">
-              <div class="become__item">
-                <div class="become__name">
-                  Определите для себя<br />
-                  сумму и срок договора
-                </div>
-                <div class="become__text">
-                  Воспользуйтесь калькулятором на сайте для ознакомления с
-                  возможностями инвестирования
-                </div>
-              </div>
-              <img src="img/income.svg" class="become__img" />
-              <div class="become__item">
-                <div class="become__name">
-                  Получайте доход
-                </div>
-                <div class="become__text">
-                  Ваши инвестиции начинают приносить дивиденды и генерировать
-                  пассивный доход
-                </div>
+              <div class="become__text">
+                Адрес нашего офиса можно найти <a href="#">здесь</a>
               </div>
             </div>
+            <img src="img/return.svg" class="become__img" />
           </div>
-          <div class="become__graph-mob">
-            <div class="become__graph-mob-item">
-              <img src="img/money-bag.svg" class="become__graph-mob-img" />
-              <div class="become__graph-mob-title">
-                Определите для себя сумму и срок договора
+          <div class="become__midlde">
+            <div class="become__numeral">01</div>
+            <div class="become__line"></div>
+            <div class="become__numeral">02</div>
+            <div class="become__line"></div>
+            <div class="become__numeral">03</div>
+          </div>
+          <div class="become__graph-column">
+            <div class="become__item">
+              <div class="become__name">
+                Определите для себя<br />
+                сумму и срок договора
               </div>
-              <div class="become__graph-mob-text">
+              <div class="become__text">
                 Воспользуйтесь калькулятором на сайте для ознакомления с
                 возможностями инвестирования
               </div>
             </div>
-
-            <div class="become__graph-mob-item">
-              <img src="img/income.svg" class="become__graph-mob-img" />
-              <div class="become__graph-mob-title">
-                Обратитесь в наш офис и заключите договор
-              </div>
-              <div class="become__graph-mob-text">
-                Адрес нашего офиса можно найти <a href="#">здесь</a>
-              </div>
-            </div>
-
-            <div class="become__graph-mob-item">
-              <img src="img/return.svg" class="become__graph-mob-img" />
-              <div class="become__graph-mob-title">
+            <img src="img/income.svg" class="become__img" />
+            <div class="become__item">
+              <div class="become__name">
                 Получайте доход
               </div>
-              <div class="become__graph-mob-text">
+              <div class="become__text">
                 Ваши инвестиции начинают приносить дивиденды и генерировать
                 пассивный доход
               </div>
             </div>
           </div>
-          <button class="become__btn blue-btn">Стать инвестром</button>
         </div>
-      </section>
-      <section class="guarantee">
-        <div class="container">
-          <div class="guarantee__title title-block">Гарантии надежности</div>
+        <div class="become__graph-mob">
+          <div class="become__graph-mob-item">
+            <img src="img/money-bag.svg" class="become__graph-mob-img" />
+            <div class="become__graph-mob-title">
+              Определите для себя сумму и срок договора
+            </div>
+            <div class="become__graph-mob-text">
+              Воспользуйтесь калькулятором на сайте для ознакомления с
+              возможностями инвестирования
+            </div>
+          </div>
 
-          <div class="guarantee__row row">
-            <div class="col-sm-4 col-xs-12">
-              <img src="img/income.svg" class="guarantee__img" />
-              <div class="guarantee__item-title">
-                Официальный договор
-              </div>
-              <div class="guarantee__text">
-                Стандартный договор <br />
-                соответствует статьям 807-812 <br />Гражданского кодекса РФ
-              </div>
+          <div class="become__graph-mob-item">
+            <img src="img/income.svg" class="become__graph-mob-img" />
+            <div class="become__graph-mob-title">
+              Обратитесь в наш офис и заключите договор
             </div>
-            <div class="col-sm-4 col-xs-12">
-              <img src="img/guarantee2.svg" class="guarantee__img" />
-              <div class="guarantee__item-title">
-                Ответственность застрахована
-              </div>
-              <div class="guarantee__text">
-                Стандартный договор <br />
-                соответствует статьям 807-812 <br />Гражданского кодекса РФ
-              </div>
+            <div class="become__graph-mob-text">
+              Адрес нашего офиса можно найти <a href="#">здесь</a>
             </div>
-            <div class="col-sm-4 col-xs-12">
-              <img src="img/guarantee3.svg" class="guarantee__img" />
-              <div class="guarantee__item-title">
-                Опыт и активы компании
-              </div>
-              <div class="guarantee__text">
-                Мы работаем более 10 лет и наши активы достигают 1 000 000 000 ₽
-              </div>
+          </div>
+
+          <div class="become__graph-mob-item">
+            <img src="img/return.svg" class="become__graph-mob-img" />
+            <div class="become__graph-mob-title">
+              Получайте доход
+            </div>
+            <div class="become__graph-mob-text">
+              Ваши инвестиции начинают приносить дивиденды и генерировать
+              пассивный доход
             </div>
           </div>
         </div>
-      </section>
-      <section class="ready">
-        <div class="container">
-          <div class="title-block ready__title">Готовы стать инвестором?</div>
-          <div class="ready__wrap">
-            <div>
-              <div class="ready__item">
-                <div class="ready__item-title">
-                  Позвоните нам и мы поможем начать инвестировать!
-                </div>
-                <div class="ready__text">+ 8 800 555 55 55</div>
-              </div>
-              <div class="ready__item">
-                <div class="ready__item-title">
-                  Приезжайте к нам в офис и наши специалисты проконсультируют
-                  Вас по возможным вопросам:
-                </div>
-                <div class="ready__text">г. Москва, ул. Лихачева, д. 5</div>
-              </div>
+        <button class="become__btn blue-btn">Стать инвестром</button>
+      </div>
+    </section>
+    <section class="section guarantee">
+      <div class="container">
+        <h2 class="section-title has-text-centered">Гарантии надежности</h2>
+        <div class="columns is-multiline is-variable is-8">
+          <div class="column">
+            <img src="img/income.svg" class="guarantee__img" />
+            <div class="guarantee__item-title">
+              Официальный<br> договор
             </div>
-            <div>
-              <div class="ready__item">
-                <div class="ready__item-title">
-                  Или оставьте заявку, мы позвоним!
-                </div>
-                <button class="blue-btn ready__btn">
-                  Хочу стать инвестором
-                </button>
-              </div>
+            <div class="guarantee__text">
+              Стандартный договор соответствует статьям 807-812 Гражданского кодекса РФ
             </div>
           </div>
-          <div class="ready__map">
-            <div class="ready__map-text">Здесь карта</div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer-main">
-      <div class="container footer-flex">
-        <div class="footer-main__column">
-          <img src="./img/footer-logo.png" class="footer-main__img" />
-          <div class="footer-main__text">
-            2019 ФОНД СБЕРЕЖЕНИЙ ИНВЕСТИЦИЙ <br />
-            ИНН 7724451748 ОГРН 1187746779868<br />
-            115304, г. Москва, ул. Кантемировская, д. 3 корп. 3<br />
-          </div>
-        </div>
-        <div class="footer-main__column">
-          <div class="footer-main__title">Навигация по сайту</div>
-          <div class="footer-main__item">О компании</div>
-          <div class="footer-main__item">Программы</div>
-          <div class="footer-main__item">Надежность</div>
-          <div class="footer-main__item">Преимущества</div>
-          <div class="footer-main__item">Контакты</div>
-        </div>
-        <div class="footer-main__column">
-          <div class="footer-main__contact">
-            <div class="footer-main__contact-big">
-              + 8 800 555 55 55
+          <div class="column">
+            <img src="img/guarantee2.svg" class="guarantee__img" />
+            <div class="guarantee__item-title">
+              Ответственность<br>застрахована
             </div>
-            <div class="footer-main__contact-text">
-              заказать звонок
+            <div class="guarantee__text">
+              Стандартный договор соответствует статьям 807-812 Гражданского кодекса РФ
             </div>
           </div>
-          <div class="footer-main__contact">
-            <div class="footer-main__contact-big">
-              info@fsi.ru
+          <div class="column">
+            <img src="img/guarantee3.svg" class="guarantee__img" />
+            <div class="guarantee__item-title">
+              Опыт и активы<br>компании
             </div>
-            <div class="footer-main__contact-text">
-              написать нам
-            </div>
-          </div>
-          <div class="footer-main__contact">
-            <div class="footer-main__contact-big">
-              г. Москва, ул. Лихачева, д. 5
-            </div>
-            <div class="footer-main__contact-text">
-              написать нам
+            <div class="guarantee__text">
+              Мы работаем более 10 лет и наши активы достигают 1 000 000 000 ₽
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    </section>
+    <section class="section ready">
+      <div class="container">
+        <h2 class="section-title">Готовы стать инвестором?</h2>
+        <div class="ready__wrap">
+          <div>
+            <div class="ready__item">
+              <div class="ready__item-title">
+                Позвоните нам и мы поможем начать инвестировать!
+              </div>
+              <div class="ready__text">+ 8 800 555 55 55</div>
+            </div>
+            <div class="ready__item">
+              <div class="ready__item-title">
+                Приезжайте к нам в офис и наши специалисты проконсультируют
+                Вас по возможным вопросам:
+              </div>
+              <div class="ready__text">г. Москва, ул. Лихачева, д. 5</div>
+            </div>
+          </div>
+          <div>
+            <div class="ready__item">
+              <div class="ready__item-title">
+                Или оставьте заявку, мы позвоним!
+              </div>
+              <button class="blue-btn ready__btn">
+                Хочу стать инвестором
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="ready__map">
+          <div class="ready__map-text">Здесь карта</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-main">
+    <div class="container footer-flex">
+      <div class="footer-main__column">
+        <img src="./img/footer-logo.png" class="footer-main__img" />
+        <div class="footer-main__text">
+          2019 ФОНД СБЕРЕЖЕНИЙ ИНВЕСТИЦИЙ <br />
+          ИНН 7724451748 ОГРН 1187746779868<br />
+          115304, г. Москва, ул. Кантемировская, д. 3 корп. 3<br />
+        </div>
+      </div>
+      <div class="footer-main__column">
+        <div class="footer-main__title">Навигация по сайту</div>
+        <div class="footer-main__item">О компании</div>
+        <div class="footer-main__item">Программы</div>
+        <div class="footer-main__item">Надежность</div>
+        <div class="footer-main__item">Преимущества</div>
+        <div class="footer-main__item">Контакты</div>
+      </div>
+      <div class="footer-main__column">
+        <div class="footer-main__contact">
+          <div class="footer-main__contact-big">
+            + 8 800 555 55 55
+          </div>
+          <div class="footer-main__contact-text">
+            заказать звонок
+          </div>
+        </div>
+        <div class="footer-main__contact">
+          <div class="footer-main__contact-big">
+            info@fsi.ru
+          </div>
+          <div class="footer-main__contact-text">
+            написать нам
+          </div>
+        </div>
+        <div class="footer-main__contact">
+          <div class="footer-main__contact-big">
+            г. Москва, ул. Лихачева, д. 5
+          </div>
+          <div class="footer-main__contact-text">
+            написать нам
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
