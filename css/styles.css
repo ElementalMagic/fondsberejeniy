@@ -6,13 +6,12 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
 }
 
 img {
@@ -43,6 +42,7 @@ img {
   font-size: 14px;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 h2.section-title {
@@ -54,10 +54,26 @@ h2.section-title {
   margin-bottom: 100px;
 }
 
+h3.item-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #162d5a;
+  margin-bottom: 16px;
+}
+
 p {
   font-size: 16px;
   line-height: 26px;
   color: #687792;
+}
+
+.m-b-50 {
+  margin-bottom: 50px;
+}
+
+.grey-bg {
+  background: #f9fafb;
 }
 
 .header-main {
@@ -126,8 +142,6 @@ p {
   position: relative;
   display: flex;
   align-items: center;
-  padding-bottom: 70px;
-  padding-top: 35px;
 }
 
 .begin__left {
@@ -147,9 +161,6 @@ p {
 }
 
 .begin__text {
-  font-size: 16px;
-  line-height: 26px;
-  color: #687792;
   max-width: 465px;
   margin-bottom: 35px;
 }
@@ -161,7 +172,7 @@ p {
 
 .begin-info {
   position: absolute;
-  bottom: -145px;
+  bottom: -141px;
   background: #f9fafb;
   height: 140px;
   width: 100%;
@@ -182,42 +193,17 @@ p {
   color: #162d5a;
 }
 
+.begin__img {
+  display: block;
+}
+
 .about {
   padding-top: 180px !important;
-  margin-bottom: 50px;
-}
-
-.about__title {
-  margin-bottom: 100px;
-}
-
-.about__text {
-  font-size: 16px;
-  line-height: 26px;
-  color: #687792;
-  margin-bottom: 50px;
-  max-width: 565px;
-}
-
-.about__flex {
-  display: flex;
-  justify-content: space-between;
 }
 
 .about__btn {
   width: 209px;
   height: 48px;
-}
-
-.revenue__wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.revenue__title {
-  text-align: center;
-  margin-bottom: 100px;
 }
 
 .revenue__item {
@@ -234,15 +220,6 @@ p {
 .revenue__item img {
   width: 72px;
   margin-right: 50px;
-}
-
-.revenue {
-  padding-bottom: 40px;
-}
-
-.programm__title {
-  text-align: center;
-  margin-bottom: 80px;
 }
 
 .programm__invest {
@@ -375,18 +352,9 @@ p {
   justify-content: space-between;
 }
 
-.programm {
-  padding-bottom: 150px;
-  background: #f9fafb;
-  padding-top: 53px;
-}
-
-.calc__title {
-  margin-bottom: 100px;
-}
-
 .input-range {
-  width: 535px;
+  max-width: 535px;
+  width: 100%;
 }
 
 .input-range-mb {
@@ -422,27 +390,6 @@ p {
   align-items: center;
   position: relative;
   margin-bottom: 15px;
-}
-
-.input-range__slider-blue {
-  background: #377ef9;
-  width: 30%;
-  height: 3px;
-}
-
-.input-range__slider-grey {
-  background: #c4c4c4;
-  height: 3px;
-  width: 70%;
-}
-
-.input-range__slider-btn {
-  width: 20px;
-  height: 20px;
-  background: #377ef9;
-  position: absolute;
-  border-radius: 50%;
-  left: 30%;
 }
 
 .input-range__footer {
@@ -495,17 +442,6 @@ p {
   line-height: 19px;
 }
 
-.calc {
-  background: #f9fafb;
-  padding-bottom: 75px;
-  margin-bottom: 70px;
-}
-
-.become__title {
-  text-align: center;
-  margin-bottom: 100px;
-}
-
 .become__graph {
   display: flex;
   justify-content: space-between;
@@ -521,18 +457,7 @@ p {
   height: 200px;
 }
 
-.become__name {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-  color: #162d5a;
-  margin-bottom: 16px;
-}
-
 .become__text {
-  font-size: 16px;
-  line-height: 26px;
-  color: #687792;
   max-width: 390px;
 }
 
@@ -576,58 +501,10 @@ p {
   height: 48px;
 }
 
-.become {
-  margin-bottom: 85px;
-}
-
-.guarantee {
-  padding-top: 62px;
-  padding-bottom: 88px;
-  margin-bottom: 62px;
-  background: #f9fafb;
-}
-
-.guarantee__title {
-  margin-bottom: 100px;
-}
-
-.guarantee__title {
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-.guarantee__row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
 .guarantee__img {
   width: 72px;
   height: 72px;
   margin-bottom: 25px;
-}
-
-.guarantee__item-title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-  color: #162d5a;
-  margin-bottom: 15px;
-}
-
-.guarantee__text {
-  font-size: 16px;
-  line-height: 26px;
-  color: #687792;
-}
-
-.ready {
-  padding-bottom: 105px;
-}
-
-.ready__title {
-  margin-bottom: 100px;
 }
 
 .ready__wrap {
@@ -654,10 +531,6 @@ p {
 .ready__btn {
   width: 283px;
   height: 48px;
-}
-
-.ready__item {
-  margin-bottom: 50px;
 }
 
 .ready__map {
@@ -769,26 +642,15 @@ p {
   .become__graph-column {
     width: 390px;
   }
-
-  .title-block {
-    font-size: 40px;
-  }
 }
 
 @media screen and (max-width: 991px) {
-  .container {
-    width: auto;
-  }
   .begin__title {
     font-size: 34px;
     line-height: 52px;
   }
   .begin__text {
     max-width: 375px;
-  }
-
-  .begin {
-    padding-bottom: 53px;
   }
 
   .begin-info__title {
@@ -800,13 +662,12 @@ p {
   }
 
   .begin-info {
-    bottom: -55px;
+    bottom: -125px;
     height: 110px;
   }
 
-  .about {
-    padding-top: 125px;
-    margin-bottom: 120px;
+  .calc__right {
+    width: auto;
   }
 }
 
@@ -841,30 +702,6 @@ p {
     width: 180px;
     height: 180px;
   }
-
-  .ready__title,
-  .guarantee__title,
-  .calc__title,
-  .revenue__title,
-  .about__title {
-    margin-bottom: 80px;
-  }
-
-  .calc__title {
-    max-width: 500px;
-  }
-
-  .programm__title {
-    margin-bottom: 60px;
-  }
-
-  .programm {
-    padding-bottom: 120px;
-  }
-
-  .guarantee__text {
-    max-width: 260px;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -889,7 +726,7 @@ p {
   }
 
   .input-range {
-    width: 465px;
+    max-width: 465px;
   }
 }
 
@@ -914,6 +751,25 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .about {
+    padding-top: 75px !important;
+  }
+
+  .section.begin-bg {
+    padding-bottom: 0 !important;
+  }
+
+  h2.section-title {
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 45px 0 !important;
+  }
+
   .begin {
     flex-direction: column;
     padding-bottom: 0;
@@ -950,29 +806,6 @@ p {
     text-align: center;
   }
 
-  .about {
-    padding-top: 50px;
-    margin-bottom: 70px;
-  }
-
-  .about__title {
-    margin-bottom: 50px;
-  }
-
-  .about__row {
-    flex-direction: column-reverse;
-  }
-
-  .about__item {
-    width: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .about__text {
-    max-width: none;
-  }
-
   .about__img {
     margin-bottom: 20px;
   }
@@ -981,27 +814,8 @@ p {
     font-size: 22px;
   }
 
-  .guarantee__text {
-    font-size: 14px;
-  }
-
-  .programm {
-    padding-bottom: 70px;
-  }
-
-  .programm__title {
-    margin-bottom: 40px;
-  }
   .programm__price {
     margin-bottom: 30px;
-  }
-
-  .calc__title {
-    margin-bottom: 60px;
-  }
-
-  .ready__title {
-    text-align: center;
   }
 
   .ready__wrap {
@@ -1012,10 +826,6 @@ p {
 
   .ready__btn {
     margin: 0 auto;
-  }
-
-  .ready {
-    padding-bottom: 55px;
   }
 
   .footer-flex {
@@ -1042,15 +852,6 @@ p {
     margin-bottom: 15px;
   }
 
-  .guarantee {
-    padding-top: 42px;
-    padding-bottom: 18px;
-  }
-
-  .guarantee__row {
-    text-align: center;
-  }
-
   .guarantee__item-title {
     width: auto;
     max-width: 260px;
@@ -1058,13 +859,14 @@ p {
     margin-bottom: 10px;
   }
 
-  .guarantee__text {
+  .guarantee-mob-column {
+    text-align: center;
+    max-width: 380px;
     margin: 0 auto;
-    margin-bottom: 30px;
   }
 
-  .guarantee__title {
-    margin-bottom: 50px;
+  .ready__text {
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -1085,10 +887,6 @@ p {
     margin-bottom: 50px;
   }
 
-  .revenue__title {
-    margin-bottom: 40px;
-  }
-
   .programm__item-wrap {
     flex-direction: column;
     align-items: center;
@@ -1100,12 +898,6 @@ p {
 
   .programm__item:last-child {
     margin-bottom: 0;
-  }
-
-  .calc__title {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 40px;
   }
 
   .calc__desc {
@@ -1136,11 +928,6 @@ p {
   .calc__wrap {
     flex-direction: column;
     align-items: center;
-  }
-
-  .calc {
-    padding-bottom: 35px;
-    margin-bottom: 40px;
   }
 
   .become__graph {
@@ -1184,10 +971,6 @@ p {
   .become__graph-mob-item {
     margin-bottom: 50px;
   }
-
-  .become {
-    margin-bottom: 35px;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1200,21 +983,12 @@ p {
     margin: 0 auto;
   }
 
-  .title-block {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
   .programm__price-text {
     font-size: 16px;
   }
 
   .programm__invest {
     margin-bottom: 20px;
-  }
-
-  .programm__title {
-    margin-bottom: 25px;
   }
 
   .input-range {
@@ -1226,20 +1000,8 @@ p {
     font-size: 13px;
   }
 
-  .calc__title {
-    font-size: 28px;
-  }
-
   .calc__big {
     font-size: 28px;
-  }
-
-  .ready__title {
-    margin-bottom: 40px;
-  }
-
-  .guarantee {
-    margin-bottom: 30px;
   }
 }
 
