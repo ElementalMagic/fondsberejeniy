@@ -353,7 +353,6 @@ p {
 }
 
 .input-range {
-  max-width: 535px;
   width: 100%;
 }
 
@@ -375,13 +374,13 @@ p {
 }
 
 .input-range__name {
-  font-size: 16px;
+  font-size: 14px;
   color: #687792;
 }
 
 .input-range__price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   color: #162d5a;
 }
 
@@ -523,7 +522,7 @@ p {
 
 .ready__text {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 44px; /* identical to box height */ /* Primary */
   color: #377ef9;
 }
@@ -534,9 +533,7 @@ p {
 }
 
 .ready__map {
-  max-width: 1100px;
   width: 100%;
-  height: 260px;
   background: #f9fafb;
   position: relative;
 }
@@ -552,10 +549,6 @@ p {
   color: #377ef9;
 }
 
-.footer-main {
-  background: #dfe7e9;
-}
-
 .footer-flex {
   display: flex;
   align-items: center;
@@ -564,8 +557,14 @@ p {
 
 .footer-main {
   background: #dfe7e9;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-top: 40px;
+}
+
+.footer-main__column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .footer-main__img {
@@ -586,6 +585,8 @@ p {
   box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
   background-color: #fff;
   border-radius: 16px;
+  max-width: 410px;
+  margin: 0 auto;
 }
 .field {
   margin-bottom: 0.75rem;
@@ -656,11 +657,11 @@ p {
 
 .footer-main__contact {
   text-align: right;
-  margin-bottom: 45px;
+  margin-bottom: 16px;
 }
 
 .footer-main__contact-big {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 33px; /* identical to box height */
   /* Black */
   color: #162d5a;
@@ -777,7 +778,6 @@ p {
   }
 
   .input-range {
-    max-width: 465px;
   }
 }
 
@@ -814,11 +814,6 @@ p {
     margin-bottom: 60px;
     font-size: 36px;
     line-height: 53px;
-    text-align: center;
-  }
-
-  .section {
-    padding: 45px 0 !important;
   }
 
   .begin {
@@ -920,6 +915,11 @@ p {
     font-size: 26px;
   }
 }
+@media screen and (max-width: 768px) {
+  .calc__btn {
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 680px) {
   .burger {
     display: block;
@@ -968,7 +968,6 @@ p {
   }
 
   .calc__item {
-    width: 50%;
     text-align: center;
   }
 
