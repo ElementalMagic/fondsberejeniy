@@ -38,7 +38,8 @@ function sendEmail(req, res) {
             <span>${req.body.name}</span>
             <h3>Номер:</h3>
             <span>${req.body.phone}</span>
-           
+           </h4></div><br><br><br><br><br><div><h4><span><i>Это письмо было создано автоматически.</i>
+            </span> <span><i>Не нужно отвечать на него.</i></span></h4></div>
         </div>
    `;
     var mailOptions = {
