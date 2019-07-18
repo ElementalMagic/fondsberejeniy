@@ -24,15 +24,15 @@
         <div class="header">
           <img src="./img/logo.svg" class="header__logo" />
           <div class="header__nav">
-            <div class="header__item">О компании</div>
-            <div class="header__item">Программы</div>
-            <div class="header__item">Надежность</div>
-            <div class="header__item">Преимущества</div>
-            <div class="header__item">Контакты</div>
+            <a class="header__item" href="#link_company">О компании</a>
+            <a class="header__item" href="#link_programs">Программы</a>
+            <a class="header__item" href="#link_guarantees">Надежность</a>
+            <a class="header__item">Преимущества</a>
+            <a class="header__item" href="#link_contacts">Контакты</a>
           </div>
           <div class="header__right">
             <a href="tel:+78005552918" class="header__phone">+7 (800) 555-29-18</a>
-            <div class="header__phoneText">заказать звонок</div>
+            <div class="header__phoneText modal-button-open" style="cursor: pointer">заказать звонок</div>
           </div>
           <div class="burger">
             <div></div>
@@ -78,7 +78,7 @@
       </section>
       <section class="section about">
         <div class="container">
-          <h2 class="section-title">О компании</h2>
+          <h2 class="section-title" id="link_company">О компании</h2>
           <div class="columns is-multiline is-variable is-8">
             <div class="column is-half">
               <p class="m-b-50">
@@ -135,7 +135,7 @@
           </div>
         </div>
       </section>
-      <section class="section grey-bg">
+      <section class="section grey-bg" id="link_programs">
         <div class="container">
           <h2 class="section-title has-text-centered">Программы доходности</h2>
           <div class="programm__invest">Сумма инвестиций</div>
@@ -352,7 +352,7 @@
           <button class="become__btn blue-btn modal-button-open">Стать инвестром</button>
         </div>
       </section>
-      <section class="section grey-bg">
+      <section class="section grey-bg" id="link_guarantees">
         <div class="container">
           <h2 class="section-title has-text-centered">Гарантии надежности</h2>
           <div class="columns is-multiline is-variable is-8">
@@ -385,7 +385,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="link_contacts">
         <div class="container">
           <h2 class="section-title">Готовы стать инвестором?</h2>
           <div class="ready__wrap">
@@ -457,27 +457,26 @@
           </div>
         </div>
         <div class="footer-main__column">
-          <div class="footer-main__title">Навигация по сайту</div>
-          <div class="footer-main__item">О компании</div>
-          <div class="footer-main__item">Программы</div>
-          <div class="footer-main__item">Надежность</div>
-          <div class="footer-main__item">Преимущества</div>
-          <div class="footer-main__item">Контакты</div>
+          <a class="footer-main__item" href="#link_company">О компании</a>
+          <a class="footer-main__item" href="#link_programs">Программы</a>
+          <a class="footer-main__item" href="#link_guarantees">Надежность</a>
+          <a class="footer-main__item">Преимущества</a>
+          <a class="footer-main__item" href="#link_contacts">Контакты</a>
         </div>
         <div class="footer-main__column">
           <div class="footer-main__contact">
             <a href="tel:+78005552918" class="footer-main__contact-big">
               +7 (800) 555-29-18
             </a>
-            <div class="footer-main__contact-text">
+            <div class="footer-main__contact-text modal-button-open" style="cursor: pointer">
               заказать звонок
             </div>
           </div>
           <div class="footer-main__contact">
-            <a href="mailto:info@fondsberinvest.ru" class="footer-main__contact-big">
+            <a href="mailto:info@fondsberinvest.ru" class="footer-main__contact-big" id="link_mail_footer">
               info@fondsberinvest.ru
             </a>
-            <div class="footer-main__contact-text">
+            <div style="cursor:pointer" onclick="document.getElementById('link_mail_footer').click()" class="footer-main__contact-text">
               написать нам
             </div>
           </div>
@@ -485,8 +484,8 @@
             <div class="footer-main__contact-big">
               г. Москва, Гусятников переулок 13/3с1
             </div>
-            <div class="footer-main__contact-text">
-              написать нам
+            <div style="cursor: pointer" class="footer-main__contact-text" onclick="document.location.href='https://www.google.com/maps/place/%D0%93%D1%83%D1%81%D1%8F%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2+%D0%BF%D0%B5%D1%80.,+13%2F3,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+101000/@55.76392,37.6407123,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a617338cfbd:0x3530538f414644e2!8m2!3d55.76392!4d37.642901'">
+              показать на карте
             </div>
           </div>
         </div>
@@ -496,5 +495,24 @@
     <script src="js/imask.js"></script>
     <script src="js/axios.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a').on('click', function (event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800,
+                        function () {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        });
+    </script>
   </body>
 </html>
