@@ -16,11 +16,11 @@ if(!process.env.DEV) {
 
 
 }
-// const options = {
-//     key: fs.readFileSync(path.resolve('../../etc/letsencrypt/live/fondsberinvest.ru/privkey.pem'), 'utf-8'),
-//     cert: fs.readFileSync(path.resolve('../../etc/letsencrypt/live/fondsberinvest.ru/cert.pem'), 'utf-8'),
-//     ca: [fs.readFileSync(path.resolve('../../etc/letsencrypt/live/fondsberinvest.ru/chain.pem'), 'utf-8')]
-// };
+const options = {
+    key: fs.readFileSync(path.resolve('../../etc/letsencrypt/live/fondsberinvest.ru/privkey.pem'), 'utf-8'),
+    cert: fs.readFileSync(path.resolve('../../etc/letsencrypt/live/fondsberinvest.ru/cert.pem'), 'utf-8'),
+    ca: [fs.readFileSync(path.resolve('../../etc/letsencrypt/live/fondsberinvest.ru/chain.pem'), 'utf-8')]
+};
 var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
 redirApp.set('port', normalizePort(80));
