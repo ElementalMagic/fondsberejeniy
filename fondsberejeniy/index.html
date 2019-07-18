@@ -54,7 +54,7 @@
                 Доходность 18% годовых при инвестициях от 100 000 руб. Вложения
                 надежно застрахованы.
               </p>
-              <button class="begin__btn blue-btn">Стать инвестором</button>
+              <button class="begin__btn blue-btn modal-button-open">Стать инвестором</button>
             </div>
             <div class="begin__right">
               <img src="./img/man.png" class="begin__img" />
@@ -90,7 +90,7 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <button class="about__btn blue-btn">Свяжитесь с нами</button>
+              <button class="about__btn blue-btn modal-button-open">Свяжитесь с нами</button>
             </div>
             <div class="column is-half">
               <img src="img/about-img.jpg" class="about__img" />
@@ -262,7 +262,7 @@
                 <div class="calc__big" id="res">13 123 000 ₽</div>
                 <div class="calc__text">Ваш потенциальный доход</div>
               </div>
-              <button class="calc__btn blue-btn">Стать инвестром</button>
+              <button class="calc__btn blue-btn modal-button-open">Стать инвестром</button>
             </div>
           </div>
         </div>
@@ -349,7 +349,7 @@
               </div>
             </div>
           </div>
-          <button class="become__btn blue-btn">Стать инвестром</button>
+          <button class="become__btn blue-btn modal-button-open">Стать инвестром</button>
         </div>
       </section>
       <section class="section grey-bg">
@@ -409,7 +409,7 @@
                 <div class="ready__item-title">
                   Или оставьте заявку, мы позвоним!
                 </div>
-                <button class="blue-btn ready__btn">
+                <button class="blue-btn ready__btn modal-button-open">
                   Хочу стать инвестором
                 </button>
               </div>
@@ -421,6 +421,30 @@
         </div>
       </section>
     </main>
+
+
+    <div class="modal" id="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="form">
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" placeholder="Введите Ваше имя" type="text" required minlength="1" />
+          </div>
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" placeholder="Введите Ваш телефон" type="tel" required minlength="18" />
+          </div>
+          <button class="button primary" id="submit"  disabled="disabled">Заказать звонок</button>
+          <button class="button primary"  id="button_ok" style="display: none" ref="button_ok">Заявка отправлена
+          </button>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+
     <footer class="footer-main">
       <div class="container footer-flex">
         <div class="footer-main__column">
@@ -468,6 +492,8 @@
       </div>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/axios.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

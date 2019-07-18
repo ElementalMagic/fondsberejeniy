@@ -581,6 +581,57 @@ p {
   text-transform: uppercase; /* Black */
   color: #162d5a;
 }
+.form{
+  padding: 40px 32px;
+  box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  border-radius: 16px;
+}
+.field {
+  margin-bottom: 0.75rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+.field label{
+  color: #3f3356;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.field input{
+  border: 1px solid #F6F8FF;
+  padding: 14px 16px 14px 16px;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #fff;
+  box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  color: #3f3356;
+  box-sizing: border-box;
+  width: 100%;
+  /*transition: 0.25 s ease;*/
+  font-family: 'Rubik', sans-serif;
+}
+.button.primary{
+  background-color: #566FFF;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+  height: 42px;
+  padding: 0 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+.button.primary[disabled="disabled"]{
+  background-color: #7192ff;
+
+}
 
 .footer-main__title {
   font-size: 16px;
