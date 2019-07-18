@@ -33,19 +33,18 @@ function sendEmail(req, res) {
 
     let html = `
         <div>
-            <h1>Обращение с сайта Лидер</h1>
+            <h1>Обращение с сайта Фонд Сбережений Инвестиций</h1>
             <h3>Имя:</h3>
             <span>${req.body.name}</span>
             <h3>Номер:</h3>
             <span>${req.body.phone}</span>
-            <h3>Текст сообщения:</h3>
-            <span>${req.body.info}</span>
+           
         </div>
    `;
     var mailOptions = {
-        from: '"Лидер" <iqlex1@yandex.ru>',
+        from: '"Фонд Сбережений Инвестиций" <iqlex1@yandex.ru>',
         to: config.emailReceiver,
-        subject: 'Обращение с сайта Лидер',
+        subject: 'Обращение с сайта Фонд Сбережений Инвестиций',
         html: html
     };
 
