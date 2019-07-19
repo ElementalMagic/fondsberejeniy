@@ -22,11 +22,11 @@ $(function () {
         }
         value = Math.floor(step * diff + initValue);
         if (value < 100000) value = 100000;
-        label.innerText = value.toLocaleString() + ' Р';
+        label.innerText = value.toLocaleString() + ' ₽';
 
         var result = value * (0.18 / 12 * $('#period').val());
         amount = value;
-        $('#res')[0].innerText = Math.floor(result).toLocaleString();
+        $('#res')[0].innerText = Math.floor(result).toLocaleString() + ' ₽';
     })
 });
 
@@ -87,7 +87,7 @@ $(function () {
 
         periodLabel.innerText = labelRes;
         var result = amount * (0.18 / 12 * $('#period').val());
-        $('#res')[0].innerText = Math.floor(result).toLocaleString();
+        $('#res')[0].innerText = Math.floor(result).toLocaleString() + ' ₽';
     })
 });
 
@@ -111,11 +111,11 @@ function initialCalc() {
     }
     value = Math.floor(step * diff + initValue);
     if (value < 100000) value = 100000;
-    label.innerText = value.toLocaleString() + ' Р';
+    label.innerText = value.toLocaleString() + ' ₽';
 
     var result = value * (0.18 / 12 * $('#period').val());
     amount = value;
-    $('#res')[0].innerText = Math.floor(result).toLocaleString();
+    $('#res')[0].innerText = Math.floor(result).toLocaleString() + ' ₽';
 }
 
 var modal = {
@@ -149,6 +149,9 @@ function initButtons() {
         modal.el.classList.remove('is-active');
     });
     $('#button_ok').on('click', function () {
+        modal.el.classList.remove('is-active');
+    });
+    $('#modal-background').on('click', function () {
         modal.el.classList.remove('is-active');
     });
     $('#submit').on('click', function () {
