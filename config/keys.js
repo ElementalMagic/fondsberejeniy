@@ -1,6 +1,6 @@
 module.exports = {
     secretKey: 'nhbnjy',
     mongoURI: 'mongodb://localhost:27017',
-    emailReceiver: 'info@fondsberinvest.ru',
+    emailReceiver: 'info@sber-fond.ru',
     emailLogin: 'iqlex1'
 };
