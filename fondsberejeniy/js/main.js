@@ -10,10 +10,10 @@ $(function () {
         if (value < 46) {
             step = 20000;
             diff = value;
-            initValue = 100000;
+            initValue = 50000;
         } else if (value < 77) {
             step = 100000;
-            diff = value - 45;
+            diff = value - 46;
             initValue = 1000000;
         } else {
             step = 250000;
@@ -21,7 +21,7 @@ $(function () {
             initValue = 4000000;
         }
         value = Math.floor(step * diff + initValue);
-        if (value < 100000) value = 100000;
+        if (value < 50000) value = 50000;
         label.innerText = value.toLocaleString() + ' ₽';
 
         var result = value * (0.18 / 12 * $('#period').val());
@@ -99,10 +99,10 @@ function initialCalc() {
     if (value < 46) {
         step = 20000;
         diff = value;
-        initValue = 0;
+        initValue = 50000;
     } else if (value < 77) {
         step = 100000;
-        diff = value - 45;
+        diff = value - 46;
         initValue = 1000000;
     } else {
         step = 250000;
@@ -110,7 +110,7 @@ function initialCalc() {
         initValue = 4000000;
     }
     value = Math.floor(step * diff + initValue);
-    if (value < 100000) value = 100000;
+    if (value < 50000) value = 50000;
     label.innerText = value.toLocaleString() + ' ₽';
 
     var result = value * (0.18 / 12 * $('#period').val());
