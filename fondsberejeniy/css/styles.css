@@ -202,6 +202,12 @@ p {
   padding-top: 180px !important;
 }
 
+.about__img {
+  max-height: 330px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .about__btn {
   width: 209px;
   height: 48px;
@@ -237,8 +243,9 @@ p {
 .programm__price {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 70px;
+  flex-wrap: wrap;
 }
 
 .programm__price-text {
@@ -258,6 +265,14 @@ p {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 425px) {
+  .programm__price-square {
+    width: 16px;
+    height: 16px;
+    margin-top: 8px;
+  }
+}
+
 .programm__price-description {
   color: #162d5a;
   font-size: 18px;
@@ -265,22 +280,40 @@ p {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 425px) {
+  .programm__price-description {
+    padding-left: 0;
+  }
+}
+
 .programm__price-name {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 16px;
   line-height: 32px;
   color: #162d5a;
 }
 
+@media screen and (max-width: 768px) {
+  .programm__price-name {
+    font-size: 24px;
+    
+  }
+}
+
 .programm__price-title {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 32px;
 }
 
-.programm__price-title+.programm__price-title {
-  margin-left: 70px;
+@media screen and (max-width: 768px) {
+  .programm__price-title {
+    justify-content: center;
+  }
 }
+
+
 
 .programm__price-square--blue {
   background: #377ef9;
@@ -291,8 +324,8 @@ p {
 
 
 .programm__item-chart-grey {
-  width: 41px;
-  height: 114px;
+  width: 40px;
+  height: 100px;
   left: 231px;
   top: 2554px;
   background: #dfe7e9;
@@ -301,16 +334,34 @@ p {
 }
 
 .programm__item-chart-grey-md {
-  height: 133px;
+  height: 200px;
 }
 
 .programm__item-chart-grey-xl {
-  height: 179px;
+  height: 300px;
+}
+
+.programm__item-chart-green {
+  width: 40px;
+  height: 120px;
+  left: 297px;
+  top: 2494px;
+  background: #377ef965;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+.programm__item-chart-green-md {
+  height: 240px;
+}
+
+.programm__item-chart-green-xl {
+  height: 360px;
 }
 
 .programm__item-chart-blue {
-  width: 41px;
-  height: 174px;
+  width: 40px;
+  height: 140px;
   left: 297px;
   top: 2494px;
   background: #377ef9;
@@ -318,11 +369,11 @@ p {
 }
 
 .programm__item-chart-blue-md {
-  height: 230px;
+  height: 280px;
 }
 
 .programm__item-chart-blue-xl {
-  height: 276px;
+  height: 420px;
 }
 
 .programm__item-chart-wrap {
@@ -344,6 +395,7 @@ p {
   color: #162d5a;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .programm__item-name {
@@ -825,6 +877,12 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  section.section {
+    padding: 40px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .about {
     padding-top: 75px !important;
   }
@@ -942,6 +1000,17 @@ p {
   .calc__btn {
     margin: 0 auto;
   }
+  .revenue__item {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .revenue__item > div {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 680px) {
   .burger {
@@ -959,6 +1028,11 @@ p {
     max-width: 340px;
     margin: 0 auto;
     margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .revenue__item > div {
+    text-align: center;
   }
 
   .programm__item-wrap {
