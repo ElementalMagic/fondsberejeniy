@@ -209,8 +209,10 @@ p {
 
 .revenue__item {
   margin-bottom: 65px;
+  padding: 0 24px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
@@ -220,7 +222,7 @@ p {
 
 .revenue__item img {
   width: 72px;
-  margin-right: 50px;
+  margin-bottom: 24px;
 }
 
 .programm__invest {
@@ -247,26 +249,46 @@ p {
 }
 
 .programm__price-square {
-  width: 10px;
-  height: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 
   /* LightGray */
   background: #dfe7e9;
   margin-right: 8px;
 }
 
-.programm__price-title {
-  display: flex;
-  align-items: center;
+.programm__price-description {
+  color: #162d5a;
+  font-size: 18px;
+  list-style-type: circle;
+  padding-left: 20px;
 }
 
-.programm__price-title:first-child {
-  margin-right: 70px;
+.programm__price-name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  line-height: 32px;
+  color: #162d5a;
+}
+
+.programm__price-title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.programm__price-title+.programm__price-title {
+  margin-left: 70px;
 }
 
 .programm__price-square--blue {
   background: #377ef9;
 }
+.programm__price-square--green {
+  background: #377ef965;
+}
+
 
 .programm__item-chart-grey {
   width: 41px;
