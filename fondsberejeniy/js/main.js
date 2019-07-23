@@ -164,7 +164,7 @@ function initButtons() {
         $('#name').attr('disabled', true);
         $('#phone').attr('disabled', true);
 
-        axios.post('https://fondsberinvest.ru/api/order/mail', body)
+        axios.post('https://sber-fond.ru/api/order/mail', body)
             .then(res => {
                 $('#submit')[0].style = 'display: none';
                 $('#button_ok')[0].style = '';
