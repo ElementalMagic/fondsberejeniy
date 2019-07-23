@@ -158,6 +158,8 @@ p {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  
 }
 
 .begin__left {
@@ -166,6 +168,7 @@ p {
 
 .begin-bg {
   background: #dfe7e9;
+  padding-top: 0 !important;
 }
 
 .begin__title {
@@ -212,6 +215,8 @@ p {
 
 .begin__img {
   display: block;
+  width: auto;
+  max-height: 698px;
 }
 
 .about {
