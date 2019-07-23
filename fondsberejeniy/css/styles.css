@@ -866,9 +866,6 @@ p {
   .calc__big {
     font-size: 38px;
   }
-
-  .input-range {
-  }
 }
 
 @media screen and (max-width: 810px) {
