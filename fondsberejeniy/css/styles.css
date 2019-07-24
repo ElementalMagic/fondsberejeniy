@@ -171,6 +171,13 @@ p {
   padding-top: 0 !important;
 }
 
+@media screen and (max-width: 768px) {
+  .begin-bg {
+  background: #dfe7e9;
+  padding-top: 56px !important;
+}
+}
+
 .begin__title {
   font-weight: bold;
   font-size: 52px;
