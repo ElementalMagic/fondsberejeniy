@@ -34,6 +34,14 @@
     content="Потребительское общество «Фонд сбережений инвестиций» образовано для возможности коллективного инвестирования в реальный бизнес. Используя потребительское общество как инструмент для инвестирования...">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/logo.svg">
+
+  <!-- Yandex.Metrika counter -->
+  <script
+    type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54646213, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/54646213" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -481,7 +489,8 @@
           <label for="phone">Телефон</label>
           <input id="phone" placeholder="Введите Ваш телефон" type="tel" required minlength="18" />
         </div>
-        <button class="button primary" id="submit" disabled="disabled">Заказать звонок</button>
+        <button class="button primary" id="submit" disabled="disabled"
+          onclick="ym(54646213, 'reachGoal', 'zakaz'); return true;" value="Заявка">Заказать звонок</button>
         <button class="button primary" id="button_ok" style="display: none" ref="button_ok">Заявка отправлена
         </button>
       </div>
