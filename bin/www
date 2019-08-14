@@ -24,11 +24,20 @@ const options = {
 var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
 redirApp.set('port', normalizePort(80));
-redirApp.get('*', (req,res) => {
+
+redirApp.get('*', (req,res,next) => {
     if(req.host.split('.')[0] !== 'opros') {
         res.status(301).redirect('https://sber-fond.ru' + req.originalUrl);
+    } else {
+        next();
     }
 });
+redirApp.get('/', (req,res,next) => {
+    res.sendFile(path.resolve('fondsberejeniy/opros/index.html'))
+});
+
+redirApp.use(express.static(path.resolve('fondsberejeniy')));
+
 
 var server, server2;
 
