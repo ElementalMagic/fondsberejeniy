@@ -1,0 +1,19 @@
+# Задаем кодировку для типов text/plain или text/html.
+# Лучше UTF-8, чтобы не было проблем с русскими УРЛами
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+  # Включаем mod_rewrite
+  RewriteEngine On
+
+  # Задаём "базовую" директорию,
+  # относительно которой идут все запросы
+  RewriteBase /
+
+  # Если запрашиваем реальная папка или файл
+  # ничего не делаем, иначе "заворачиваем" все запросы
+  # на index.php, который лежит в RewriteBase
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ /index.php [L,QSA]
+</IfModule>

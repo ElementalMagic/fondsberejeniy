@@ -1,0 +1,45 @@
+//////////////////////////////////////////////////
+/// Настройки CSSMarkup
+//////////////////////////////////////////////////
+
+@path-root: '../vendors/cssmarkup/less'; // Путь до корневой директории CSSMarkup
+@path-libs: '@{path-root}/libs'; // Путь до директории с библиотеками CSSMarkup
+
+// Настройки точек адаптивности и ширины контейнера
+@xs-min: 0px;
+@xs-max: 575px;
+@container-xs: 300px;
+
+@sm-min: 576px;
+@sm-max: 767px;
+@container-sm: 540px;
+
+@md-min: 768px;
+@md-max: 991px;
+@container-md: 720px;
+
+@lg-min: 992px;
+@lg-max: 1199px;
+@container-lg: 960px;
+
+@xl-min: 1200px;
+@xl-max: 1439px;
+@container-xl: 1140px;
+
+@xxl-min: 1440px;
+@xxl-max: 9999px;
+@container-xxl: 1200px; //1420px;
+
+//////////////////////////////////////////////////
+/// Подключение библиотек
+//////////////////////////////////////////////////
+@import '@{path-libs}/al/al.less'; // Библиотека Text Align (al)
+@import '@{path-libs}/cl/cl.less'; // Библиотека Columns (cl)
+@import '@{path-libs}/ct/ct.less'; // Библиотека Container (ct)
+@import '@{path-libs}/ds/ds.less'; // Библиотека Display (ds)
+@import '@{path-libs}/fb/fb.less'; // Библиотека FlexBox (fb)
+@import '@{path-libs}/mc/mc.less'; // Библиотека Margin Child (mc)
+@import '@{path-libs}/mg/mg.less'; // Библиотека Margin (mg)
+@import '@{path-libs}/pd/pd.less'; // Библиотека Padding (pd)
+@import '@{path-libs}/wc/wc.less'; // Библиотека Width Child (wc)
+@import '@{path-libs}/wd/wd.less'; // Библиотека Width (wd)

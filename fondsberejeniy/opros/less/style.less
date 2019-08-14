@@ -1,0 +1,196 @@
+// Подключение библиотек
+@import url('../vendors/cssmarkup/less/cssmarkup.less');
+
+// Подключение шрифтов
+// @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+//////////////////////////////
+// Теги
+//////////////////////////////
+
+@media (min-width: @xs-min) {
+  html { font-size: 13px; }
+}
+@media (min-width: @md-min) {
+  html { font-size: 14px; }
+}
+@media (min-width: @lg-min) {
+  html { font-size: 15px; }
+}
+@media (min-width: @xl-min) {
+  html { font-size: 16px; }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  // font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  max-width: 100%;
+  min-height: 100vh;
+  // width: 100%;
+  width: 100vw;
+}
+
+b, strong { font-weight: 700; }
+
+a {
+  color: inherit;
+  outline: 0 !important;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+//////////////////////////////
+// Тема
+//////////////////////////////
+
+#background-image {
+  background-image: url('../img/img-2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#background-color {
+  background-color: rgba(223, 231, 233, 0.9);
+  min-height: 100vh;
+}
+
+#layers { min-height: 100vh; }
+
+// .wrapper-header { background-color: rgba(223, 231, 233, 1); }
+
+#phone,
+#mobphone {
+  a {
+    color: #377ef9;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none !important;
+  }
+
+  a:hover { color: #000000; }
+}
+
+#mobphone {
+  margin: 20px auto;
+  max-width: fit-content;
+}
+
+#slogan {
+  color: #162d5a;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+#title h1 {
+  color: #162d5a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  span.color { color: #377ef9; }
+}
+@media (min-width: @xs-min) and (max-width: @md-max) {
+  #title h1 { font-size: 1.750rem; }
+}
+
+#description p {
+  color: #162d5a;
+  font-size: 1.500rem;
+  line-height: 1.4;
+}
+
+#cta {
+  // background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #162d5a;
+
+  .title,
+  .description {
+    font-size: 1.375rem;
+    line-height: 1.4;
+  }
+
+  a.button {
+    background-color: #377ef9;
+    color: #ffffff;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 20px 30px;
+    text-decoration: none !important;
+
+    svg {
+      fill: #ffffff;
+      height: 32px !important;
+      width: 32px !important;
+    }
+  }
+
+  a.button:hover {
+    box-shadow: 0px 0px 10px 5px rgba(55,126,249,0.5);
+      -webkit-box-shadow: 0px 0px 10px 5px rgba(55,126,249,0.5);
+      -moz-box-shadow: 0px 0px 10px 5px rgba(55,126,249,0.5);
+  }
+
+  p.label {
+    border: 2px solid #377ef9;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 15px 25px;
+    position: relative;
+  }
+
+  p.label::before {
+    background: url('/misc/arrow-left.png') left center no-repeat;
+    background-size: contain;
+    content: ' ';
+    position: absolute;
+    left: -9px;
+    top: ~"calc(50% - 9px)";
+    height: 18px;
+    width: 18px;
+  }
+}
+@media (min-width: @xs-min) and (max-width: @sm-max) {
+  #cta {
+    > a.button {
+      font-size: 1.125rem;
+      padding: 15px 20px;
+    }
+
+    p.label::before {
+      background: url('/misc/arrow-top.png') top center no-repeat;
+      background-size: contain;
+      content: ' ';
+      position: absolute;
+      top: -9px;
+      left: ~"calc(50% - 9px)";
+      height: 18px;
+      width: 18px;
+    }
+  }
+}

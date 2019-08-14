@@ -14,11 +14,6 @@ var keys = require('./config/keys.js');
 var fs = require('fs');
 var app = express();
 
-/*mongoose
-    .connect(keys.mongoURI)
-    .then(() => console.log("MongoDB connected."))
-    .catch(error => console.log(error));*/
-
 app.use(compression());
 app.use(cors());
 app.use(logger('dev'));
@@ -26,22 +21,13 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 
-/*app.get('*', function (req, res, next) {
-    if (req.hostname === 'lenfincentr.ru' || !process.env.CHECKDOMAIN) {
-        next();
+app.get('/', function (req, res, next) {
+    if(req.host.split('.')[0] === 'opros'){
+        res.sendFile(path.resolve('fondsberejeniy/opros/index.html'))
     } else {
-        res.status(301).redirect('https://lenfincentr.ru');
+        next();
     }
-});*/
-
-
-// app.get('/projects', (req, res) => {
-//     res.status(200).sendFile(path.resolve('../fondsberejeniy/projects.html'))
-// });
-// app.get('/about', (req, res) => {
-//     res.status(200).sendFile(path.resolve('../fondsberejeniy/about.html'))
-// });
-
+});
 
 app.get('*', function (req, res, next) {
     if (req.path.endsWith('.html')) {
@@ -69,12 +55,9 @@ app.get("/images/:id", function (req, res, next) {
     });
 
 });
-app.use("/docs", express.static("docs"));
 
+app.use("/docs", express.static("docs"));
 app.use('/api/order', orderRouter);
-/*app.use('/api/login', loginRouter);
-app.use('/api/review', reviewRouter);
-app.use('/api/feedback', feedbackRouter);*/
 app.use('/404', (req, res) => {
     res.status(404).sendFile(path.resolve('fondsberejeniy/NotFound.html'))
 });
